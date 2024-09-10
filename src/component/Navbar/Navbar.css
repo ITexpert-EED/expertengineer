@@ -1,0 +1,126 @@
+/* Navbar Container */
+header {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: 96px; /* 24 * 4 = 96px (h-24 in tailwind) */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 24px; /* Corresponding to px-6 in Tailwind */
+  padding-right: 24px;
+}
+
+header .flex {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo */
+header img {
+  height: 95px; /* Corresponding to h-10 in Tailwind */
+}
+
+/* Links Section */
+nav {
+  display: flex;
+  gap: 24px;
+  font-weight: 600;
+  font-size: 18px; /* text-lg in Tailwind */
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #4a4a4a; /* hover:text-gray-700 in Tailwind */
+}
+
+/* Dropdown Button */
+nav .relative {
+  position: relative;
+}
+
+nav button {
+  background: none;
+  border: none;
+  font: inherit;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: black;
+}
+
+nav button:hover {
+  color: #4a4a4a;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 0;
+}
+
+/* Dropdown Menu */
+nav .absolute {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  margin-top: 0.5rem; /* mt-2 */
+  width: 128px; /* w-32 */
+  z-index: 10;
+}
+
+nav .absolute li a {
+  display: block;
+  padding: 13px 8px; /* px-4 py-2 */
+  color: black;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+nav .absolute li a:hover {
+  background-color: #f3f3f3; /* hover:bg-gray-100 */
+}
+
+/* Social Media Icons */
+header .space-x-4 {
+  display: flex;
+  gap: 16px; /* Corresponding to space-x-4 in Tailwind */
+}
+
+header .space-x-4 a {
+  color: #999;
+  transition: color 0.2s ease-in-out;
+}
+
+header .space-x-4 a:hover {
+  color: black;
+}
+
+/* Search Icon */
+header a svg {
+  height: 24px; /* h-6 in Tailwind */
+  cursor: pointer;
+}
+
+/* Contact Button */
+header button {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 8px 16px; /* px-4 py-2 */
+  border-radius: 0.375rem; /* rounded */
+  transition: background-color 0.2s ease-in-out;
+}
+
+header button:hover {
+  background-color: #2d2d2d; /* hover:bg-gray-800 */
+}
